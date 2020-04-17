@@ -18,7 +18,25 @@ function favorite(){
     }
 }
 
+function cityGuessingGame (){
+    var correctAnswer = 43;
+    for(var i = 0; i < 8; i = i + 1){
+        var numberGuess = prompt('Please Guess a Number between 1 and 100');
+        if(numberGuess == correctAnswer){
+            alert('You are a true Boston citzen');
+            break;
+        } else {
+            alert('Sorry, please try again!');
+        }
+        if (i == '7') {
+            alert('Get out of here you Yankee!');
+        }
+    }
+}
+
 greetings();
-today();
 favorite();
+today();
+cityGuessingGame();
+
 
